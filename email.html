@@ -8,8 +8,8 @@
     <script src="https://kit.fontawesome.com/5f37481eb6.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
-        div {
-            border-left: 2px solid black;
+        .div {
+            border-left: 2px solid rgb(14, 155, 64);
             padding-left: 10px;
         }
 
@@ -18,53 +18,67 @@
             width: 100px;
             border-radius: 50%;
         }
-        .email{
-            margin-bottom: -15px;
+        #socials{
+            padding: 14px 0 0 0;
+        }
+        #email{
+            margin-bottom: -10px;
             display: flex;
             align-items: center;
+            padding: 14px 0;
             gap: 6px;
         }
-        .phone{
+        #phone{
             display: flex;
             align-items: center;
             gap: 5px;
         }
-        /* .title{
-            font-family: 'The Nautigal', cursive;
-        } */
-        .instagram{
+        #title{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 14px;
+            color: rgb(166, 24, 171);
+            /* text-decoration:underline; */
+        }
+        #instagram{
             height: 30px;
             width: 30px;
             transform: scale(0.9);
         }
-        .email_icon{
+        #email_icon{
             width: 20px;
             height: 20px;
             transform: scale(0.8);
-
         }
-        .phone_icon{
+        #div{
+            color: rgb(6, 140, 53);
+        }
+        #phone_icon{
             width: 20px;
             height: 20px;
             transform: scale(0.8);
         }
-        .facebook{
-            height: 30px;
-            width: 30px;
-            transform: scale(0.9);
-
-        }
-        .twitter{
+        #facebook{
             height: 30px;
             width: 30px;
             transform: scale(0.9);
         }
-        .name{
+        #profile_image{
+            border: 1px solid rgb(14, 155, 64);
+        }
+       
+        #twitter{
+            height: 30px;
+            width: 30px;
+            transform: scale(0.9);
+        }
+        #name{
             font-weight: bold;
-            margin-bottom: -15px;
             font-size: xx-large;
         }
-
+        hr{
+            width: 170px;
+            margin-left: 0%;
+        }
         a {
             text-decoration: none;
             color: black;
@@ -73,24 +87,24 @@
 </head>
 
 <body>
-    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+    <img id="profile_image" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
         alt="image">
-    <div>
-        <p class="name">John Doe</p>
-        <p class="title">Frontend Developer</p>
-        <p class="email">
-            <img class="email_icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Ki-gbARXPDRRu2xIu0O_0EFWiRMVMR3_bQ&usqp=CAU" alt="email">
+    <div class="div">
+        <div id="name">John Doe</div>
+        <div id="title">Frontend Developer</div>
+        <div id="email">
+            <span id="div">Email:</span><!-- <img id="email_icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Ki-gbARXPDRRu2xIu0O_0EFWiRMVMR3_bQ&usqp=CAU" alt="email"> -->
             <a href="www" > John@gmail.com</a>
-        </p>
-        <p class="phone">
-            <img class="phone_icon" src="data:image/png;base64,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" alt="phone">
+        </div>
+        <div id="phone">
+           <span id="div">Phone:</span><!-- <img id="phone_icon" src="data:image/png;base64,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" alt="phone"> -->
             <span>+255 708 123 564</span>
-        </p>
-        <p class="socials">
-            <a href="www"><img class="facebook" src="https://i.pinimg.com/originals/5f/0c/25/5f0c255d69fa5c24701c547d35ceb5ae.png" alt="facebook"></a>
-            <a href="www"><img class="twitter" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt="twitter"></a>
-            <a href="www"><img class="instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="instagram"></a>
-        </p>
+        </div>
+        <div id="socials">
+            <a href="www"><img id="facebook" src="https://i.pinimg.com/originals/5f/0c/25/5f0c255d69fa5c24701c547d35ceb5ae.png" alt="facebook"></a>
+            <a href="www"><img id="twitter" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/twitter_circle-512.png" alt="twitter"></a>
+            <a href="www"><img id="instagram" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="instagram"></a>
+        </div>
 
     </div>
 </body>
