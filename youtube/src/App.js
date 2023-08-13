@@ -29,7 +29,9 @@ function App() {
           <span id='span8'>Race</span>
           <span id='span8'>Race</span>
           <span id='span8'>Race</span>
-          <span id='span8'>Race</span>
+          <span id='span8'>Music</span>
+          <span id='span8'>Choirs</span>
+          <span id='span8'>Cars</span>
         </div>
       </section>
       
