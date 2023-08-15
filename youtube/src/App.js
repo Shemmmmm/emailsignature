@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="App">
       <div>
-        <input type='text'/>
-        <input type='button'><img src='https://www.creativefabrica.com/wp-content/uploads/2019/02/Search-icon-by-Kanggraphic-1.jpg' alt= 'search icon'/></input>
+        <input type='text'></input>
+        <button type='button'><img src='https://www.freepik.com/icon/search-interface-symbol_54481#fromView=keyword&term=Search&page=1&position=1' alt= 'search icon'/></button>
       </div>
       <section role='navigation'>
         <div>

@@ -17,3 +17,6 @@ section[role='navigation']{
   display:flex;
   align-items: center;
 }
+img[alt='search icon']{
+height: 15px;
+}
