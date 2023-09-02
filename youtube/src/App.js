@@ -5,6 +5,7 @@ function App() {
     <div className="App">
       <div>
         <input type='text'></input>
+    
         <button type='button'><img src='https://www.freepik.com/icon/search-interface-symbol_54481#fromView=keyword&term=Search&page=1&position=1' alt= 'search icon'/></button>
       </div>
       <section role='navigation'>
@@ -38,6 +39,8 @@ function App() {
           <span id='span8'>Cars</span>
         </div>
       </section>
+      <img src='https://cdn-icons-png.flaticon.com/128/1946/1946436.png' alt='home'></img>
+      <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiMAg15EJlvcbzZMrA9fw28ptGFItB5miTuE1xiYiKXvCztT0&s' alt='shorts'></img>
     </div>
   );
 }
