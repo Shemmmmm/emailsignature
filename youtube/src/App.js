@@ -4,9 +4,10 @@ function App() {
   return (
     <div className="App">
       <div>
-        <input type='text'></input>
-    
-        <button type='button'><img src='https://www.freepik.com/icon/search-interface-symbol_54481#fromView=keyword&term=Search&page=1&position=1' alt= 'search icon'/></button>
+        <button type='button'><img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzTVQElqeHCvlprmwaCI61pUzr0tVFX0r6RSWXzKzY_SFz_pqV&s' alt = 'search'></img></button>
+
+
+      
       </div>
       <section role='navigation'>
         <div>
