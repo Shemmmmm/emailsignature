@@ -4,10 +4,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <button type='button'><img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzTVQElqeHCvlprmwaCI61pUzr0tVFX0r6RSWXzKzY_SFz_pqV&s' alt = 'search'></img></button>
-
-
-      
+        <button style = {{'border-radius' : 20+`px`}} type='button'><img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzTVQElqeHCvlprmwaCI61pUzr0tVFX0r6RSWXzKzY_SFz_pqV&s' alt = 'search'></img></button>   
       </div>
       <section role='navigation'>
         <div>
@@ -15,7 +12,7 @@ function App() {
         </div>
         <div id='scrolllist'>
           <span id='span8'>All</span>
-          <span id='span8'>News</span>
+          <span id='span8'>Nellpws</span>
           <span id='span8'>Sports</span>
           <span id='span8'>Football</span>
           <span id='span8'>Basketball</span>
