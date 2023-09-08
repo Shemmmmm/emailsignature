@@ -6,9 +6,9 @@ function App() {
   return (
       <BrowserRouter>
          <Routes>
-             <Route exact path="/components/search" element={<Search/>}/>
-           </Routes>
-     </BrowserRouter>
+          <Route exact path = '/search' element = {<Search/>} />
+         </Routes>
+      </BrowserRouter>
   );
 }
 
