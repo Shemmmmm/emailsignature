@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 export default function Signin(params) {
    
    const navigate = useNavigate();
-   
+   params
     return (
         <button onClick= {() => navigate(-1)} >Sign in</button>
     );
