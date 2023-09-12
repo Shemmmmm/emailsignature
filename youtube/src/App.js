@@ -5,12 +5,15 @@ import Signin from './components /signin';
   
 function App() {
   return (
-      <BrowserRouter>
+    <>
+   <h1>tyighsgs</h1>
+   </>
+    /*  <BrowserRouter>
          <Routes>
           <Route exact path='/signin' element={<Signin/>}/>
           <Route exact path = '/' element = {<Search/>} />
          </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */
   );
 }
 
