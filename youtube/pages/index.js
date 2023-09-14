@@ -8,7 +8,7 @@ import {useState} from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const fileRef = ref(storage, 'Videos/screen-20230810-060148.mp4');
+  const fileRef = ref(storage);// 'Videos/screen-20230810-060148.mp4');
   const [videoUrl, setVideoUrl] = useState('');
   fileRef.getDownloadURL().then((url) => {
     
