@@ -23,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <p> {typeof (ref(storage))}</p>
+        <p> {(ref(storage))}</p>
        /* <video src={videoUrl} controls autoplay width="640" height="360">
             Your browser does not support the video tag.
             </video> */
