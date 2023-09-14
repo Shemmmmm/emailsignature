@@ -8,12 +8,12 @@ import {useState} from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const fileRef = ref(storage);// 'Videos/screen-20230810-060148.mp4');
+  //const fileRef = ref(storage);
   const [videoUrl, setVideoUrl] = useState('');
-  fileRef.getDownloadURL().then((url) => {
+ // fileRef.getDownloadURL().then((url) => {
     
-    setVideoUrl(url);
-  })
+    //setVideoUl(fileRef);
+ // })
   return (
     <>
       <Head>
@@ -23,9 +23,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <video src={videoUrl} controls autoplay width="640" height="360">
+        <p> {ref(storage)}</p>
+       /* <video src={videoUrl} controls autoplay width="640" height="360">
             Your browser does not support the video tag.
-            </video>
+            </video> */
       </main>
       </>
       )
