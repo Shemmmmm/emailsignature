@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import storage from './firebase.js'
-import { ref, getDownloadURL } from "firebase/storage";
+import { ref} from "firebase/storage";
 import {useState} from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
