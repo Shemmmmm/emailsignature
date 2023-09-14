@@ -24,9 +24,9 @@ export default function Home() {
       </Head>
       <main>
         <p> {(ref(storage))}</p>
-       /* <video src={videoUrl} controls autoplay width="640" height="360">
+        <video src={videoUrl} controls autoplay width="640" height="360">
             Your browser does not support the video tag.
-            </video> */
+            </video> 
       </main>
       </>
       )
