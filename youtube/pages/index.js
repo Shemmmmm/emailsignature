@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   const fileRef = ref(storage);
   const [videoUrl, setVideoUrl] = useState('');
- alert(typeof fileRef.getDownloadURL)//.then((url) => {
+  fileRef.getDownloadURL//.then((url) => {
     
     //setVideoUl(fileRef);
 //  })
@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <p> {alert(fileRef.storage.getDownloadURL)}</p>
+        <p> {alert(fileRef.getDownloadURL)}</p>
         <video src={videoUrl} controls width="640" height="360">
             Your browser does not support the video tag.
             </video> 
