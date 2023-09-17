@@ -1,2 +1,2 @@
 import 'firebase/storage'
-import 
+import storage from '../config/firebase'
