@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Main from 'next/main'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import storage from './firebase.js'
@@ -22,12 +22,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <Main>
         <p> {(ref(storage))}</p>
         <video src={videoUrl} controls width="640" height="360">
             Your browser does not support the video tag.
             </video> 
-      </main>
+      </Main>
       </>
       )
 }
