@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Main from 'next/main'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import storage from './firebase.js'
+import storage from '../firebase /storage/config/firebase.js'
 import { ref} from "firebase/storage";
 import {useState} from 'react';
 const inter = Inter({ subsets: ['latin'] })
