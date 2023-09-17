@@ -1,19 +1,18 @@
 import Head from 'next/head'
-import Main from 'next/main'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import storage from '../firebase /firebase/config/firebase.js'
-import { ref} from "firebase/storage";
+import { ref,getDownloadURL} from "firebase/storage";
 import {useState} from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  //const fileRef = ref(storage);
+  const fileRef = ref(storage);
   const [videoUrl, setVideoUrl] = useState('');
- // fileRef.getDownloadURL().then((url) => {
+ alert(typeof fileRef.getDownloadURL)//.then((url) => {
     
     //setVideoUl(fileRef);
- // })
+//  })
   return (
     <>
       <Head>
@@ -22,12 +21,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Main>
-        <p> {(ref(storage))}</p>
+      <main>
+        <p> {alert(fileRef.storage.getDownloadURL)}</p>
         <video src={videoUrl} controls width="640" height="360">
             Your browser does not support the video tag.
             </video> 
-      </Main>
+      </main>
       </>
       )
 }
