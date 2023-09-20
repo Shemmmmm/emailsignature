@@ -10,7 +10,7 @@ export default function Home() {
   const fileRef = ref(storage);
   const [videoUrl, setVideoUrl] = useState('');
  const num = fileRef.fullPath.length//.then((url) => {
-    
+  
     //setVideoUl(fileRef);
 //  })
   return (
