@@ -2,17 +2,24 @@ import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import storage from '../firebase /firebase/config/firebase.js'
-import { ref,getDownloadURL} from "firebase/storage";
-import {useState} from 'react';
+import { ref } from "firebase/storage";
+import {useEffect, useState} from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const fileRef = ref(storage);
-  const [videoUrl, setVideoUrl] = useState('');
- const num = fileRef.fullPath.length//.then((url) => {
   
-    //setVideoUl(fileRef);
-//  })
+  const [videoUrl, setVideoUrl] = useState('');
+ //const num = ref('gs://fir-c5188.appspot.com/Videos/VID-20230916-WA0002.mp4')//.then((url) => {
+ async function handler() {
+     const url = await fetch('gs://fir-c5188.appspot.com/VID-20230916-WA0002.mp4');
+      setVideoUrl(url);
+
+  }
+  
+ //useEffect( () => {
+  // setVideoUrl(num)
+ //  } ,[num]
+ // )
   return (
     <>
       <Head>
@@ -22,10 +29,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <p> {num}</p>
-        <video src={videoUrl} controls width="640" height="360">
+        <p> thnfv ggg</p>
+        <video src= 'https://youtu.be/EtxBvU21J28?si=TB3FBzKx3DJgweCX'  width="640" height="360" >
             Your browser does not support the video tag.
-            </video> 
+        </video> 
       </main>
       </>
       )
