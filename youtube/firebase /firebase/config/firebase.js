@@ -19,7 +19,7 @@ const firebaseConfig = {
 };
 
               // Initialize Firebase
-      const storage = !firebase.getApps.length  ?  initializeApp(firebaseConfig):
+      const storage = !firebase.getApps.length ?  initializeApp(firebaseConfig):
                 getStorage(initializeApp(firebaseConfig));
               // const analytics = getAnalytics(app)
             export default storage;
