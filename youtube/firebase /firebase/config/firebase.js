@@ -18,7 +18,6 @@ const firebaseConfig = {
   measurementId: process.env.MEASUREMENT_ID  
 };
 
-              // Initialize Firebase
       const storage = !firebase.getApps.length ? initializeApp(firebaseConfig):
                 getStorage(initializeApp(firebaseConfig));
               
