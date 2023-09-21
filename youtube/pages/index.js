@@ -4,7 +4,7 @@ import styles from '@/styles/Home.module.css'
 import storage from '../firebase /firebase/config/firebase.js'
 import { ref } from "firebase/storage";
 import {useEffect, useState} from 'react';
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   const [videoUrl, setVideoUrl] = useState('');
