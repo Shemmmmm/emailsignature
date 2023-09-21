@@ -7,7 +7,6 @@ import {useEffect, useState} from 'react';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  
   const [videoUrl, setVideoUrl] = useState('');
  //const num = ref('gs://fir-c5188.appspot.com/Videos/VID-20230916-WA0002.mp4')//.then((url) => {
  async function handler() {
