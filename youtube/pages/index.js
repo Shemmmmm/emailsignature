@@ -16,10 +16,6 @@ export default function Home() {
 
   }
   
- //useEffect( () => {
-  // setVideoUrl(num)
- //  } ,[num]
- // )
   return (
     <>
       <Head>
