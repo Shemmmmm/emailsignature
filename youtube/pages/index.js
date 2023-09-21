@@ -29,8 +29,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <p> thnfv ggg</p>
-        <video src= 'https://player.vimeo.com/external/403132008.sd.mp4?s=2272c12c9edcb5235ae7e4dfe18fd9180c686375&profile_id=164&oauth2_token_id=57447761'  width="640" height="360" >
+        <video src= 'https://player.vimeo.com/external/403132008.sd.mp4?s=2272c12c9edcb5235ae7e4dfe18fd9180c686375&profile_id=164&oauth2_token_id=57447761' controls width="640" height="360" >
             Your browser does not support the video tag.
         </video> 
       </main>
