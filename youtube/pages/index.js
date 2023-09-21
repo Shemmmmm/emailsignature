@@ -14,7 +14,7 @@ export default function Home() {
      const url = await fetch('gs://fir-c5188.appspot.com/VID-20230916-WA0002.mp4');
       setVideoUrl(url);
   }
-  
+
   return (
     <>
       <Head>
