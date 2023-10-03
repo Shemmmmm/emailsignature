@@ -1,9 +1,13 @@
+import {useState} from 'react';
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 // const inter = Inter({ subsets: ['latin'] });
 import VideoList from '@/components/displayVideos';
 export default function Home() {
-
+const [url, setUrl] = useState('');
+fetch('https://ap-south-1.aws.data.mongodb-api.com/app/data-deeyw/endpoint/data/v1').then(data => setInterval(() => {
+  setUrl(data);
+}, 2000))
   return (
     <>
       <Head>
@@ -13,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <VideoList/>
+        <video src={url} width={50+'px'} height ={50+ 'px'} controls ></video>
       </main>
       </>
       )
