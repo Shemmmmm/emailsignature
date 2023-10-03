@@ -1,10 +1,11 @@
-import {useState} from 'react';
+import {useEffect, useState} from 'react';
 import Head from 'next/head'
 // import { Inter } from 'next/font/google'
 // const inter = Inter({ subsets: ['latin'] }) '@/components/displayVideos';
 export default function Home() {
 const [url, setUrl] = useState('');
-fetch('https://ap-south-1.aws.data.mongodb-api.com/app/data-deeyw/endpoint/Cluster0/YouTube/Videos').then((data) =>{ setUrl(data)})
+useEffect(() =>
+fetch('https://ap-south-1.aws.data.mongodb-api.com/app/data-deeyw/endpoint/Cluster0/YouTube/Videos').then((data) =>{ setUrl(data)}),[]);
   return (
     <>
       <Head>
