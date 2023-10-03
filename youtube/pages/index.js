@@ -1,13 +1,10 @@
 import {useState} from 'react';
 import Head from 'next/head'
 // import { Inter } from 'next/font/google'
-// const inter = Inter({ subsets: ['latin'] });
-import VideoList from '@/components/displayVideos';
+// const inter = Inter({ subsets: ['latin'] }) '@/components/displayVideos';
 export default function Home() {
 const [url, setUrl] = useState('');
-fetch('https://ap-south-1.aws.data.mongodb-api.com/app/data-deeyw/endpoint/data/v1').then(data => setInterval(() => {
-  setUrl(data);
-}, 2000))
+fetch('https://ap-south-1.aws.data.mongodb-api.com/app/data-deeyw/endpoint/data/v1').then((data) =>{ setUrl(data)})
   return (
     <>
       <Head>
@@ -17,7 +14,8 @@ fetch('https://ap-south-1.aws.data.mongodb-api.com/app/data-deeyw/endpoint/data/
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <video src={url} width={50+'px'} height ={50+ 'px'} controls ></video>
+        <video src={url} width={300+'px'} height ={300+ 'px'} controls ></video>
+        {url.length}
       </main>
       </>
       )
