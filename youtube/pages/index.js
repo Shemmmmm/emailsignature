@@ -4,7 +4,7 @@ import Head from 'next/head'
 // const inter = Inter({ subsets: ['latin'] }) '@/components/displayVideos';
 export default function Home() {
 const [url, setUrl] = useState('');
-fetch('https://ap-south-1.aws.data.mongodb-api.com/app/data-deeyw/endpoint/data/v1').then((data) =>{ setUrl(data)})
+fetch('https://ap-south-1.aws.data.mongodb-api.com/app/data-deeyw/endpoint/Cluster0/YouTube/Videos').then((data) =>{ setUrl(data)})
   return (
     <>
       <Head>
