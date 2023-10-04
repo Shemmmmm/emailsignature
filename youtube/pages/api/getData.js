@@ -1,6 +1,6 @@
 // pages/api/getData.js
 import dbConnect from '../../db';
-import YourModel from '../../models/yourModel'; // Replace 'yourModel' with your actual model name
+import videos  from '../../models/yourModel'; // Replace 'yourModel' with your actual model name
 
 export default async function handler(req, res) {
   await dbConnect();
