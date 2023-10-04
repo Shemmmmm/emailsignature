@@ -4,7 +4,7 @@ import { stringifyCookie } from 'next/dist/compiled/@edge-runtime/cookies';
 
 const videoSchema= new mongoose.Schema({
   Url : {
-    type:string
+    type:String
   }
 });
 
