@@ -1,10 +1,13 @@
 // models/yourModel.js
 import mongoose from 'mongoose';
+import { stringifyCookie } from 'next/dist/compiled/@edge-runtime/cookies';
 
-const YourSchema = new mongoose.Schema({
-  // Define your schema here
+const videoSchema= new mongoose.Schema({
+  url : {
+    type:string
+  }
 });
 
-const YourModel = mongoose.models.YourModel || mongoose.model('YourModel', YourSchema);
+const videos = mongoose.models.videos || mongoose.model('videos', videoSchema);
 
-export default YourModel;
+export default videos;
