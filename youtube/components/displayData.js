@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-function YourComponent() {
+function Videos() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -20,4 +20,4 @@ function YourComponent() {
   );
 }
 
-export default YourComponent;
+export default Videos;
