@@ -15,7 +15,7 @@ function YourComponent() {
     <div>
       {data.map((item) => (
         <div key={item._id}>{item.name}</div> {/* Modify this to display your data */}
-      ))}
+      )}
     </div>
   );
 }
