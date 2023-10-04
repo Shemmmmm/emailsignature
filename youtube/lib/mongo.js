@@ -21,10 +21,9 @@ const options = {
             client = new MongoClient(uri, options)
                 global._mongoClientPromise = client.connect()
                   }
-                    clientPromise = global._mongoClientPromise
-                    } else {
-                      client = new MongoClient(uri, options)
-                        clientPromise = client.connect()
-                        }
-
-                        export default clientPromise;
+                clientPromise = global._mongoClientPromise
+                } else {
+                client = new MongoClient(uri, options)
+                     clientPromise = client.connect()
+                  }
+                  export default clientPromise;
