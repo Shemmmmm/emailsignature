@@ -14,7 +14,7 @@ function Videos() {
   return (
     <div>
       {data.map((item) => (
-        <div key={item.id}>{item.Url}</div> /* Modify this to display your data */
+        <video key={item.id} src={item.Url}></video> /* Modify this to display your data */
       ))}
     </div>
   );
