@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 try {
-    mongoose.connect('mongodb+srv://derekwhittlle:avDmRb21xnp1HZ4B@cluster0.wpyig8l.mongodb.net/?retryWrites=true&w=majority');
+    mongoose.connect('mongodb+srv://derekwhittlle:avDmRb21xnp1HZ4B@Cluster0.wpyig8l.mongodb.net/?retryWrites=true&w=majority');
 console.log('connected');
 } catch (error) {
     console.log(error);
