@@ -1,13 +1,13 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is the application backend",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["server", "nodejs"],
+  "author": "Shem",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",

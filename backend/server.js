@@ -10,7 +10,7 @@ mongoose.connect('mongodb://localhost:27017/your-database-name', {
   useUnifiedTopology: true,
 });
 
-app.get('/api/users', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
     const users = await User.find();
     res.json(users);
@@ -20,7 +20,7 @@ app.get('/api/users', async (req, res) => {
   }
 });
 
-app.post('/signup', async(req, res) => {
+app.post('/', async(req, res) => {
     const { email, firstName } = req.body
     const user = new User({ email, firstName })
     const ret = await user.save();
