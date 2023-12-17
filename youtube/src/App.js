@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import WebcamSample from './components/webCam';
-
+import {Login} from "./components/login.js";
 function App() {
   return (
     <div className="App">
-     <WebcamSample/>
+      <Login/>
     </div>
   );
 }
