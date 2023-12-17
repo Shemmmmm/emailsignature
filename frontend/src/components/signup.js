@@ -17,6 +17,7 @@
 //         );
 //       };
 import React, { useState } from "react";
+import axios from "axios";
 import '../signup.css';
 export function SignUp() {
   const [firstName, setFirstName] = useState("");
@@ -24,7 +25,20 @@ export function SignUp() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   function Submit() {
-    
+    axios({
+      method: 'post',
+      url: 'http://localhost:5000',
+      data: firstName, lastName, email, password,
+      headers: {'Content-Type': 'multipart/form-data' }
+      })
+      .then(function (response) {
+          //handle success
+          console.log(response);
+      })
+      .catch(function (response) {
+          //handle error
+          console.log(response);
+      });
   }
   return (
     <form className="sign_up_form">
@@ -60,7 +74,7 @@ export function SignUp() {
         name="password"
         required
       />
-      <button type="submit" onClick={Submit}>Submit</button>
+      <button type="submit" onClick={() => Submit()}>Submit</button>
     </form>
   );
 }
