@@ -6,7 +6,6 @@ export function Login() {
     const responseGoogle = (response) => {
         console.log('response');
       };
-      
             return (
             <GoogleLogin
               clientId="YOUR_GOOGLE_CLIENT_ID"
