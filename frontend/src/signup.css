@@ -8,6 +8,14 @@
     top: 50%;
     transform: translate(-50%, -50%);
      padding: 5rem;
-     background-color: blue;
+     background-color: rgb(129, 39, 141);
      border-radius: 20px;
+}
+input, button{
+    line-height: 30px;
+    border-radius: 20px;
+    padding: 20px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 20px;
+    border: 1px darkblue;
 }
